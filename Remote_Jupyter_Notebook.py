@@ -26,8 +26,8 @@ parser.add_argument('-t', '--terminate', dest='terminate', action='store_true', 
                     help='terminate the IPython notebook on remote server')
 args = parser.parse_args()
 
-host="wel-145-31.cm.utexas.edu" # host name
-user="gs27722" # username
+host="your-host-name" # host name
+user="your-username" # username
 
 # write a temporary python script to upload to server to execute
 # this python script will get available port number
