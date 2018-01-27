@@ -93,7 +93,7 @@ def connect():
     print('LOCAL SSH TUNNELING PORT: {}\n'.format(port_local))
 
     ipython_local_command = "ssh -N -f -L localhost:{}:localhost:{} \
-                            gs27722@wel-145-31.cm.utexas.edu".format(port_local, port_remote)
+                            {}@{}".format(port_local, port_remote, user, host)
 
     subprocess.run(ipython_local_command, shell=True)
     pyperclip.copy('http://localhost:{}'.format(port_local))
